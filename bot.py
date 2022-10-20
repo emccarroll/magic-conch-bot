@@ -26,7 +26,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content.lower().startswith('oh magic conch, should '):
+    if message.content.lower().startswith('oh magic conch'):
         await message.channel.send(conch_decide(message.content))
     
 client.run(TOKEN)
